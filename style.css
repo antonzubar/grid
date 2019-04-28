@@ -12,6 +12,23 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+#logo {
+    margin-top: 65px;
+}
+
+.main-holder {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    position: relative;
+}
+
+.main-holder span {
+    background-color: #b2f2ee;
+    padding: 0 10px;
+    text-shadow: 5px 4px 4px #9fd8d5;
+}
+
 .top-text {
     text-align: center;
     font-size: 45px;
@@ -19,4 +36,184 @@ body {
     color: #505050;
     margin-bottom: 0;
     margin-top: 0;
+    text-shadow: 5px 4px 4px #cacacc;
+}
+
+.top-text:nth-child(2) {
+    margin-bottom: 150px;
+}
+
+#contact-us-button {
+    padding: 14px 55px;
+    border: 2px solid #777879;
+    border-radius: 2px;
+    color: #777879;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    align-self: center;
+    margin-bottom: 195px;
+    font-weight: 500;
+    transition: background-color 0.2s linear;
+}
+
+#contact-us-button:hover {
+    background-color: #b6eeeb;
+}
+
+.main-holder img {
+    align-self: flex-end;
+    position: absolute;
+    bottom: 130px;
+}
+
+#about-us {
+    background-color: #f8fafa;
+}
+
+.headline {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    color: #323333;
+    text-align: center;
+    padding-top: 130px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.headline-explanation {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #848585;
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.about-us-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px ;
+    padding-top: 140px;
+    padding-bottom: 115px;
+}
+
+.about-us-table img {
+    grid-row-start: 1;
+    grid-row-end: 10;
+}
+
+.about-us-block:first-of-type {
+    box-sizing: border-box;
+    padding-right: 85px;    
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.about-us-block__headline {
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #646565;
+}
+
+.about-us-block__paragraph {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666767;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.works-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 13px;
+    margin-top: 120px;
+    padding-bottom: 125px;
+}
+
+#services {
+    background-color: #f9fbfb;
+}
+
+.services-table {
+    display: grid;
+    grid-template-columns: 650px 1fr;
+    grid-template-rows: 370px 370px 370px;
+    grid-gap: 13px;
+    margin-top: 120px;
+}
+
+.services-tile {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 65px;
+    padding-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
+
+.services-tile__expanded {
+    display: none;
+    position: absolute;
+}
+
+.services-tile__headline {
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.services-tile__paragraph {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.services-tile__know-more {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 19px;
+    color: white;
+}
+
+.services-tile:nth-child(1) {
+    background-image: url(./img/services/1.png);
+    background-size: contain;
+}
+
+.services-tile:nth-child(2) {
+    background-image: url(./img/services/2.png);
+    background-size: contain;
+}
+
+.services-tile:nth-child(3) {
+    background-image: url(./img/services/3.png);
+    background-size: contain;
+}
+
+.services-tile:nth-child(4) {
+    background-image: url(./img/services/4.png);
+    background-size: contain;
+}
+
+.services-tile:nth-child(5) {
+    background-image: url(./img/services/5.png);
+    background-size: contain;
+}
+
+.services-tile:nth-child(6) {
+    background-image: url(./img/services/6.png);
+    background-size: contain;
 }
