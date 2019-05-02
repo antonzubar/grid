@@ -145,10 +145,11 @@ body {
 
 .services-table {
     display: grid;
-    grid-template-columns: 650px 1fr;
-    grid-template-rows: 370px 370px 370px;
+    grid-template-columns: repeat(45, 1fr);
+    grid-template-rows: 420px 420px 420px;
     grid-gap: 13px;
     margin-top: 120px;
+    padding-bottom: 125px;
 }
 
 .services-tile {
@@ -156,6 +157,7 @@ body {
     box-sizing: border-box;
     padding-left: 65px;
     padding-bottom: 55px;
+    padding-right: 90px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; 
@@ -172,6 +174,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+    box-sizing: border-box;
 }
 
 .services-tile__paragraph {
@@ -184,36 +187,280 @@ body {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    font-weight: 19px;
     color: white;
 }
 
 .services-tile:nth-child(1) {
     background-image: url(./img/services/1.png);
     background-size: contain;
+    grid-column-start: 1;
+    grid-column-end: 27;
 }
 
 .services-tile:nth-child(2) {
     background-image: url(./img/services/2.png);
     background-size: contain;
+    grid-column-start: 27;
+    grid-column-end: 46;
 }
 
 .services-tile:nth-child(3) {
     background-image: url(./img/services/3.png);
     background-size: contain;
+    grid-column-start: 1;
+    grid-column-end: 27;
 }
 
 .services-tile:nth-child(4) {
     background-image: url(./img/services/4.png);
     background-size: contain;
+    grid-column-start: 27;
+    grid-column-end: 46;
 }
 
 .services-tile:nth-child(5) {
     background-image: url(./img/services/5.png);
     background-size: contain;
+    grid-column-start: 1;
+    grid-column-end: 20;
 }
 
 .services-tile:nth-child(6) {
     background-image: url(./img/services/6.png);
     background-size: contain;
+    grid-column-start: 20;
+    grid-column-end: 46;
+}
+
+.team-table {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: 440px 440px;
+    grid-gap: 15px;
+    margin-top: 120px;
+    padding-bottom: 125px;
+}
+
+.team-tile:nth-child(1) {
+    background-image: url(./img/small-team/1.png);
+    background-size: contain;
+}
+
+.team-tile:nth-child(2) {
+    background-image: url(./img/small-team/2.png);
+    background-size: contain;
+}
+
+.team-tile:nth-child(3) {
+    background-image: url(./img/small-team/3.png);
+    background-size: contain;
+}
+
+.team-tile:nth-child(4) {
+    background-image: url(./img/small-team/4.png);
+    background-size: contain;
+}
+
+.team-tile:nth-child(5) {
+    background-image: url(./img/small-team/5.png);
+    background-size: contain;
+}
+
+.team-tile:nth-child(6) {
+    background-image: url(./img/small-team/6.png);
+    background-size: contain;
+}
+
+#review {
+    background-color: #f9fbfb;
+}
+
+#clients .container img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#request {
+    background-image: url(./img/request/background.png);
+}
+
+.request-table {
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: 615px 500px;
+    grid-template-rows: 460px;
+    grid-gap: 25px;
+    padding-bottom: 120px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(1%, 9%, 14%, 0.7);
+    padding: 40px 30px;
+}
+
+::-webkit-input-placeholder {
+    color: #c0c5c9;
+}
+
+form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #6e7981;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+form input:first-of-type {
+    margin-top: 0;
+}
+
+form input:last-of-type {
+    position: relative;
+    height: 95px;
+}
+
+
+form input:last-of-type ::placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.address-block {
+    background-color: rgba(1%, 9%, 14%, 0.7);
+}
+
+form button {
+    align-self: flex-start;
+    margin-top: 38px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    border: none;
+    background-color: #6eeee4;
+    padding: 15px 40px;
+}
+
+.address-block {
+    color: #c0c5c9;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding: 40px 30px;
+}
+
+.address-block span {
+    margin-bottom: 8px;
+}
+
+.address-block img {
+    justify-self: flex-end;
+}
+
+#footer {
+    background-color: #262b2e;
+    color: #fff;
+}
+
+#footer .container {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon-table {
+    display: grid;
+    grid-template-columns: 46px 46px 46px 46px;
+    grid-gap: 10px;
+    align-self: center;
+}
+
+.social-icons-holder {
+    background-color: #424648;
+    display: inline-block;
+    width: 46px;
+    height: 40px;
+}
+
+#footer .container span:first-of-type {
+    color: #dfe0e0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#footer .container span:last-of-type {
+    color: #969798;
+    font-family:  'Merriweather', serif;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.review-table {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 395px 665px;
+    grid-template-rows: 360px;
+    grid-gap: 83px;
+    padding-bottom: 190px;
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-box img:first-of-type {
+    position: absolute;
+    top: -25px;
+    left: 39px;
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(135,131,135,1);
+    -moz-box-shadow: 0px 2px 15px 0px rgba(135,131,135,1);
+    box-shadow: 0px 2px 15px 0px rgba(135,131,135,1);
+}
+
+.image-box img:last-of-type {
+    position: absolute;
+    margin-left: -25px;
+    left: 50%;
+    bottom: -80px;
+}
+
+.review-table div {
+    background-color: #eaebed;
+}
+
+.review-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 95px;
+}
+
+.review-box p:first-of-type {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.review-box p:first-of-type span {
+    color: #7f7f7f;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.review-box p:last-of-type {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #696a6b;
+    margin-bottom: 80px;
+}
+
+.review-box img {
+    align-self: center;
 }
